@@ -96,10 +96,10 @@ class Set {
 		if (root == nullptr) {
 			return root;
 		}
-		if (key < root->data) {
+		else if (key < root->data) {
 			root->left = _erase(root->left, key);
 		}
-		if (key > root->data) {
+		else if (key > root->data) {
 			root->right = _erase(root->right, key);
 		}
 		else {
